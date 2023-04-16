@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <Nav>
+        <!-- Top left View Highscores indicator --> 
+        <button id="view-high-scores">View Highest Scores</button>
+        <!-- Top right timer indicator -->
+        <div id="timer">Time: <span id="time"></span></div>
+    </Nav>
+
+
+    <!-- Quiz specifications/rules Zone -->
+    <div id="quiz">        
+        <h1>Coding Quiz Challenge</h1>
+        <P>Try to answer the following code-related questions within the time limit. Kepp in mind that incorrect answers will penalize your score/time by 15 seconds!</P>
+        <!--button to click for starting the quiz --> 
+        <button id="start-btn">Start Quiz</button>
+        
+        <form id="quiz-form" style="display: none;">
+            <!-- Questions will be dynamically populated -->
+
+        </form>    
+        
+        
+        <!-- Quiz questions/choices Zone -->
+
+        <div id="results" style="display:none;">
+            <h2>Your Score: <span id="score"></span></h2>
+            <input type="text" id="initials" placeholder="Enter your initials">
+            <button id="save-score-btn">Save Score</button>
+            <button id="go-back-from-results">Go Back</button>
+
+        <!-- Highest scores list display -->
+        </div>
+        <div id="high-scores" style="display:none;">
+            <h2>High Scores</h2>
+            <ul id="high-scores-list"></ul>        
+            <!-- back to start button from high scores list -->
+            <button id="back-to-start">Back to Start</button>
+            <button id="clear-high-scores">Clear High Scores</button>
+  
+        </div>
+
+    </div>
+
+   
+    <script src="assets/js/script.js"></script>    
+</body>
+</html>
